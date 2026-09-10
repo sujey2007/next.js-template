@@ -3,5 +3,5 @@ import { baseConfig } from './base.js';
 
 export const nextJsConfig = [
   ...baseConfig,
-  reactHooks.configs['recommended-latest'],
+  reactHooks.configs.flat['recommended-latest'],
 ];
