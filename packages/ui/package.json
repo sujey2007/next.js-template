@@ -1,0 +1,37 @@
+{
+  "name": "@repo/ui",
+  "version": "1.0.0",
+  "private": true,
+  "files": [
+    "src"
+  ],
+  "exports": {
+    "./styles.css": "./src/styles.css",
+    "./button": "./src/button.tsx",
+    "./container": "./src/container.tsx",
+    "./section-heading": "./src/section-heading.tsx",
+    "./navbar": "./src/navbar.tsx",
+    "./hero": "./src/hero.tsx",
+    "./feature-grid": "./src/feature-grid.tsx",
+    "./cta": "./src/cta.tsx",
+    "./footer": "./src/footer.tsx"
+  },
+  "scripts": {
+    "lint": "eslint src --max-warnings 0",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": "^19"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "eslint": "^9.39.1",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@repo/utils": "workspace:*"
+  }
+}
